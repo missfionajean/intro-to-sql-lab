@@ -61,21 +61,21 @@ Solution: 'Serravalle'
 
 Commands:
 
-Solution: 
+SELECT * FROM city WHERE name LIKE '%Serra%';
+
+Solution: 'Serra' (Brazil)
 
 -- Clue #6: We're close! Our South American agent says she just got a taxi at the airport, and is headed towards the capital! Look up the country's capital, and get there pronto! Send us the name of where you're headed and we'll follow right behind you!
 
 Commands:
 
-Solution: 
+SELECT capital FROM country WHERE code = 'BRA';
 
--- Clue #7: She knows we're on to her – her taxi dropped her off at the international airport, and she beat us to the boarding gates. We have one chance to catch her, we just have to know where she's heading and beat her to the landing dock.
+SELECT name FROM city WHERE id = 211;
 
-Commands:
+Solution: 'Brasilia'
 
-Solution: 
-
--- Lucky for us, she's getting cocky. She left us a note, and I'm sure she thinks she's very clever, but if we can crack it, we can finally put her where she belongs – behind bars.
+-- Clue #7: She knows we're on to her – her taxi dropped her off at the international airport, and she beat us to the boarding gates. We have one chance to catch her, we just have to know where she's heading and beat her to the landing dock. Lucky for us, she's getting cocky. She left us a note, and I'm sure she thinks she's very clever, but if we can crack it, we can finally put her where she belongs – behind bars.
 
 -- Our playdate of late has been unusually fun –
 -- As an agent, I'll say, you've been a joy to outrun.
@@ -84,10 +84,11 @@ Solution:
 -- So I'm off to add one to the population I find
 -- In a city of ninety-one thousand and now, eighty five.
 
-
 -- We're counting on you, gumshoe. Find out where she's headed, send us the info, and we'll be sure to meet her at the gates with bells on.
 
 Commands:
 
-Solution: 
+SELECT * FROM city WHERE population = 91084;
+
+Solution: 'Santa Monica'
 
